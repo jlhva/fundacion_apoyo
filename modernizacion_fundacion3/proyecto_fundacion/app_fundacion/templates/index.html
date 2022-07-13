@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body id="body">
+    <h1>Fundacion Apoyo</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCenteredExample"
+          >
+
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link active" href="/pacientes_web/">pacientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/entrar_insumos_web/">Insumos</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/entrar_aportadores_web/">Aportes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+              </div>
+          </div>
+      </nav> 
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id ="img1" src="{% static 'img/aniversario-fundacion-las-rosas-01062017.jpg' %}" class="center">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-black">¿Quienes Somos?</h5>
+              <p>Somos una casa de acogida de ancianos con una basta experienca en el cuidado de adultos mayores.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="img2" src="{% static 'img/Detalles+(57+de+72)+(1).jpg' %}" class="center ">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-black">Dedicacion </h5>
+              <p>Contamos con un personal con una destacable bocacion para dar el mejor cuidado de nuestros ancianos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="img3" src="{% static 'img/old-people-banner.png' %}" class="center" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-black">Bienestar </h5>
+              <p>El bienestar fisico y psicologico son nuestras prioridades.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <footer>
+        <div class="row">
+            <div class="col">
+                <h4>Contacto</h4>
+                Telefono:+5696162737 <br>  
+                Correo:fundacion@gmail.com         
+            </div>
+            <div class="col">
+                <h4>direccion</h4>
+                 rano raraku 3456 ,puente alto, region metropolitana
+            </div>
+            <div class="col">
+                <h4>¿quieres trabajar para nosotros?</h4>
+                envianos tu curriculum a fundacionreclutamiento@gmai.com
+            </div>
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>

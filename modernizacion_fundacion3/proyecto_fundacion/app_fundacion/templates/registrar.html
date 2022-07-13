@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body id="body">
+    <h1>Registro a la Fundacion Apoyo</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarCenteredExample"
+            aria-controls="navbarCenteredExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCenteredExample"
+          >
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link active" href="/pacientes_web/">pacientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/entrar_insumos_web/">Insumos</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/entrar_aportadores_web/">Aportes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+              </div>
+          </div>
+      </nav> 
+      <form action="/registro/" method="get" class="form-container formulario">
+            <div class="row">
+              <div class="col">
+                <label for="" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+              </div>
+              <div class="col">
+                <label for="" class="form-label">Rut</label>
+                <input type="text" class="form-control" id="rut" name="rut">
+              </div>
+              <div class="col">
+                <label for="" class="form-label">Correo</label>
+                <input type="text" class="form-control" name="correo" id="correo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="" class="form-label">Hijos</label>
+                <input type="text" class="form-control" name="hijos" id="hijos">
+              </div>
+              <div class="col">
+                <label for="" class="form-label">Nacionalidad</label>
+                <select name="nacionalidad" id="nacionalidad" class="form-select" >
+                  <option value="1">Chileno</option>
+                  <option value="2">Venenzolano</option>
+                  <option value="3">Haitiano</option>
+                  <option value="4">Colombiano</option>
+                  <option value="5">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="" class="form-label">Especifique medicamentos, enfermedades, cuidados especiales</label>
+                <textarea name="cuidados" id="cuidados" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="" class="form-label">Numero de telefono</label>
+                <input type="text" class="form-control"  name="telefono" id="telefono">
+              </div>
+              <div class="col">
+                <label for="" class="form-label">Estado civil</label>
+                <select name="estado" id="estado" class="form-select">
+                  <option value="1">Viudo/a</option>
+                  <option value="2">Casado/a</option>
+                  <option value="3">Soltero/a</option>
+                  <option value="4">Divorciado/a</option>              
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <br>
+                <input type="submit" value="Enviar" class="btn btn-primary">
+              </div>
+            </div>
+
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <footer>
+      <div class="row">
+          <div class="col">
+              <h4>Contacto</h4>
+              Telefono:+5696162737 <br>  
+              Correo:fundacion@gmail.com         
+          </div>
+          <div class="col">
+              <h4>direccion</h4>
+               rano raraku 3456 ,puente alto, region metropolitana
+          </div>
+          <div class="col">
+              <h4>¿quieres trabajar para nosotros?</h4>
+              envianos tu curriculum a fundacionreclutamiento@gmai.com
+          </div>
+      </div>
+    </footer>
+
+</body>
